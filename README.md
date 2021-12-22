@@ -17,5 +17,8 @@ samples, guidance on mobile development, and a full API reference.
 login screen
 ![login](https://user-images.githubusercontent.com/77603397/147142915-b9dffeb5-399f-49cf-b77c-4eb0f8fff8f7.jpeg)
 
+user detail screen
+![user](https://user-images.githubusercontent.com/77603397/147143458-7ac02138-05d4-4c31-96b1-3dcdfb5c0e8e.jpeg)
+
 
 

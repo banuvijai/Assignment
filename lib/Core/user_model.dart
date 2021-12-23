@@ -6,8 +6,8 @@ class UserDetailResponse{
   String? url;
   String? thumbnailUrl;
 
-  UserDetailResponse(
-      {required this.albumId, required this.id, required this.title, required this.url, required this.thumbnailUrl});
+  UserDetailResponse({required this.albumId, required this.id,
+    required this.title, required this.url, required this.thumbnailUrl});
 
   UserDetailResponse.fromJson(Map<String, dynamic> json) {
     albumId = json['albumId'];
@@ -18,12 +18,16 @@ class UserDetailResponse{
   }
 
   Map<String, dynamic> toJson() {
-    final Map<String, dynamic> data = Map<String, dynamic>();
-    data['albumId'] = this.albumId;
-    data['id'] = this.id;
-    data['title'] = this.title;
-    data['url'] = this.url;
-    data['thumbnailUrl'] = this.thumbnailUrl;
+
+    ///changed Map<String,dynamic>{} to {}
+    final Map<String, dynamic> data = {};
+
+    ///changed this.var to var
+    data['albumId'] = albumId;
+    data['id'] = id;
+    data['title'] = title;
+    data['url'] = url;
+    data['thumbnailUrl'] = thumbnailUrl;
     return data;
   }
 }

@@ -5,6 +5,7 @@ import 'login.dart';
 void main() {
   runApp(MaterialApp(
     debugShowCheckedModeBanner: false,
-    home: SafeArea(child: LoginPage()),
+    ///removed SafeArea here and wrapped the LoginPage() body with SafeArea
+    home: LoginPage(),
   ));
 }
